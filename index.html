@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>WP2WS Sketch</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/css/style.css" />
+    
+    <!-- supportive libraries -->
+    <script src="/libs/stats.min.js"></script>
+    <script src="/libs/dat.gui.min.js"></script>
+    
+    <!-- jsfeat --> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsfeat/0.0.8/jsfeat-min.js"></script>
+    
+    <!-- p5.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js" crossorigin="anonymous"></script> -->
+    
+    <!-- ml5.js -->
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js" crossorigin="anonymous"></script>
+    
+    <!-- three.js -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js" crossorigin="anonymous"></script> -->
+    <script src="/libs/three.js"></script>
+    <script src="/libs/OrbitControls.js"></script>
+    <script src="/libs/RectAreaLightUniformsLib.js"></script>
+    <script src="/libs/Reflector.js"></script>
+    <script src="/libs/OBJLoader.js"></script>
+    
+    <!-- the main script -->
+    <script src="/js/text.js" defer></script>
+    <script src="/js/end.js" defer></script>
+    <script src="/js/scene03.js" defer></script>
+    <script src="/js/scene02.js" defer></script>
+    <script src="/js/scene01.js" defer></script>
+    <script src="/js/transition.js" defer></script>
+    <script src="/js/mirror.js" defer></script>
+    <script src="/js/PointLight.js" defer></script>
+    <script src="/js/Particle.js" defer></script>
+    <script src="/js/Boids.js" defer></script>
+    <script src="/js/ParticleScene01.js" defer></script>
+    <script src="/js/script-p5.js" defer></script>
+    <script src="/js/script.js" defer></script>
+    <script src="/js/audio.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    
+<!--     <script>
+      // var textwrapper = document.querySelector('#container-text');
+      document.querySelector('#container-text').innerHTML = document.querySelector('#container-text').innerText.replace(/\S/g, "<span class='letter'>$&</span>");
+
+      anime.timeline({loop: true})
+        .add({
+          targets: '#container-text .letter',
+          opacity: [0,1],
+          easing: "easeInOutQuad",
+          duration: 2250,
+          delay: (el, i) => 150 * (i+1)
+        }).add({
+          targets: '#container-text',
+          opacity: 0,
+          duration: 1000,
+          easing: "easeOutExpo",
+          delay: 1000
+        });
+    </script> -->
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="container-three"></div>
+    <div id="container-p5"></div>
+    <div id="container-text">
+      Welcome to the INTERPLACE.
+      <br>
+      Move your body freely in here.
+      <br>
+      Find your missing pieces.
+    </div>
+    
+    <audio id="audio01" src="https://cdn.glitch.com/e6629ac0-4ccd-4c5a-ab87-1616e540f988%2F0.mp3?v=1621184577622" ></audio>
+    <audio id="audio02" src="https://cdn.glitch.com/e6629ac0-4ccd-4c5a-ab87-1616e540f988%2F1.mp3?v=1621184578673"></audio>
+    <audio id="audio03" src="https://cdn.glitch.com/e6629ac0-4ccd-4c5a-ab87-1616e540f988%2F2.mp3?v=1621184585459"></audio>
+    <audio id="audio04" src="https://cdn.glitch.com/e6629ac0-4ccd-4c5a-ab87-1616e540f988%2F3.mp3?v=1621184595453"></audio>
+    <audio id="windchime" src="https://cdn.glitch.com/e6629ac0-4ccd-4c5a-ab87-1616e540f988%2Fwindchime.mp3?v=1621196700975"></audio>
+    
+  </body>
+</html>

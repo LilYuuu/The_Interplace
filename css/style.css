@@ -1,0 +1,32 @@
+html {
+  background-color: black !important;
+}
+
+body {
+  margin: 0;
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+#container-p5 {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+#container-text {
+  /* background-color: lightgray; */
+  width: 16%;
+  height: 100px;
+  line-height: 50px;
+  
+  font-size: 24px;
+  font: 'Fira Sans Condensed';
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  
+  color: white;
+  text-align: center;
+}
